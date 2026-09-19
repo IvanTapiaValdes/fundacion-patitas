@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Colabora | Fundación Patitas</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+
+<body>
+
+    <!-- NAVBAR (Bootstrap) -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo.jpg" alt="Logo de Fundación Patitas">
+                Fundación Patitas
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adoptame.html">Adóptame</a></li>
+                    <li class="nav-item"><a class="nav-link" href="como-adoptar.html">Cómo Adoptar</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="colabora.html">Colabora</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<main class="main-content">
+
+    <section class="section-card">
+
+        <h1>Colabora</h1>
+
+        <h3>
+            Es la oportunidad de muchos para hacer del mundo un lugar mejor para los animales.
+        </h3>
+
+         <h4>
+            Formas de ayudar:
+        </h4>
+
+        <!-- Cuadros de texto con formas de ayudar, centrados -->
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card about-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Donaciones</h5>
+                        <p class="card-text">
+                            Puedes colaborar donando alimento, medicamentos o insumos veterinarios
+                            para los animales que actualmente están bajo nuestro cuidado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card about-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Voluntariado</h5>
+                        <p class="card-text">
+                            Participa en jornadas de adopción, realizadas en diferentes comunas.
+                            Súmate como voluntario para apoyar en el cuidado diario, paseos y
+                            campañas de esterilización.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card about-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Datos Bancarios</h5>
+                        <p class="card-text">
+                            Para realizar donaciones, puedes utilizar los siguientes datos bancarios:
+                        </p>
+                        <p class="card-text">
+                            Banco Santander
+                        </p>
+                        <p class="card-text">
+                            Cuenta Corriente: 26990673
+                        </p>
+                        <p class="card-text">
+                            RUT: 18.113.645-8
+                        </p>
+                        <p class="card-text">
+                            Email: fundacionpatitas@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card about-card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Difusión</h5>
+                        <p class="card-text">
+                            Comparte nuestras publicaciones y jornadas de adopción en tus redes sociales.
+                            Ayúdanos a llegar a más personas que puedan donar, adoptar o colaborar
+                            con la fundación.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <figure class="contact-figure text-center mt-4">
+
+            <img src="../assets/colabora.jpg"
+                 alt="Imagen de perritos esperando ser adoptados"
+                 class="about-img">
+
+        </figure>
+
+        <hr class="my-4">
+
+        <h3>También puedes escribirnos a través de nuestro formulario de contacto:</h3>
+
+        <form>
+
+            <div class="mb-3">
+                <label for="contactName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="contactName" placeholder="Tu nombre">
+            </div>
+
+            <div class="mb-3">
+                <label for="contactEmail" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="contactEmail" placeholder="tucorreo@ejemplo.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="contactReason" class="form-label">Motivo de contacto</label>
+                <textarea class="form-control" id="contactReason" rows="4" placeholder="Donar, Voluntariado, Informaciones, Adopción"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label for="contactMessage" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="contactMessage" rows="4" placeholder="Escribe tu mensaje..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-custom">Enviar mensaje</button>
+
+        </form>
+
+
+    </section>
+
+
+</main>
+
+
+
+<footer class="footer">
+    <div class="container footer-inner">
+    <p>
+            &copy; 2026 Iván Tapia. Todos los derechos reservados.
+        </p>
+
+
+        <div class="redes">
+
+            <a href="https://facebook.com" target="_blank" class="facebook">
+                Facebook
+            </a>
+
+            <a href="https://instagram.com" target="_blank" class="instagram">
+                Instagram
+            </a>
+
+        </div>
+    </div>
+</footer>
+
+<!-- BOOTSTRAP -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
