@@ -1,0 +1,23 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+
+.navbar-custom {
+
+  .nav-link {
+    color: $color-navbar-link;
+    font-weight: 600;
+
+    &:hover,
+    &.active {
+      color: $color-navbar-hover;
+    }
+  }
+
+  @media (max-width: $breakpoint-navbar) {
+    .navbar-collapse {
+      margin-top: $espacio-sm;
+      text-align: center;
+    }
+  }
+}

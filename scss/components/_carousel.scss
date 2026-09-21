@@ -1,0 +1,26 @@
+@use "../utilities/variables" as *;
+
+.carousel-caption-custom {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: $color-footer-texto;
+  border-radius: $radio-borde;
+  padding: 0.75rem 1rem;
+
+  h5,
+  p {
+    color: $color-footer-texto;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.carousel-inner {
+  max-width: $ancho-maximo-carousel;
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+}

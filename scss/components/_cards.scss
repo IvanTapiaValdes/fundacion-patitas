@@ -1,0 +1,80 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.section-card {
+  display: flex;
+  flex-direction: column;
+  gap: $espacio-md;
+  background: $color-card-section;
+  padding: $espacio-lg;
+  border-radius: $radio-borde-lg;
+}
+
+.home-card {
+  @include tarjeta-hover;
+  background: $color-card-home;
+
+  .card-title {
+    color: $color-azul-marca;
+  }
+}
+
+.project-card {
+  @include tarjeta-hover;
+  background: $color-card-clara;
+
+  .card-title {
+    color: $color-azul-marca;
+  }
+
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
+}
+
+
+.service-card {
+  @include tarjeta-hover;
+  background: $color-card-clara;
+
+  .card-title {
+    color: $color-azul-marca;
+  }
+
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
+}
+
+.about-card {
+  border: none;
+  border-radius: $radio-borde-lg;
+  background: $color-card-clara;
+}
+
+.modal-custom {
+  .modal-header {
+    background: $color-azul-marca;
+    color: white;
+    border-bottom: none;
+
+    .btn-close {
+      filter: invert(1);
+    }
+  }
+
+  .modal-title {
+    font-weight: 700;
+  }
+}
+
+.badge-skill {
+  background: $color-azul-marca;
+  color: white;
+  font-weight: 600;
+  font-size: .85rem;
+  padding: 8px 14px;
+  margin: 4px 4px 0 0;
+}

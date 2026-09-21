@@ -1,0 +1,56 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.footer {
+  padding: $espacio-md;
+  background: $color-footer-fondo;
+  color: $color-footer-texto;
+  text-align: center;
+
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: $espacio-sm;
+
+    @include desde($breakpoint-tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+
+  .redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $espacio-md;
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      transition: $transicion-rapida;
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    .facebook {
+      color: $color-facebook;
+    }
+
+    .instagram {
+      color: $color-instagram;
+    }
+
+    .twitter {
+      color: $color-twitter;
+    }
+
+    .linkedin {
+      color: $color-linkedin;
+    }
+  }
+}

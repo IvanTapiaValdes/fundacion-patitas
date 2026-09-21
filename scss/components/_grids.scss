@@ -1,0 +1,49 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: $espacio-md;
+
+  flex: 1;
+
+  padding: $espacio-md;
+  margin: $espacio-xl auto;
+  width: 100%;
+  max-width: $ancho-maximo-contenido;
+}
+
+
+.service-grid {
+  @include grilla-responsive($columnas-tablet: 2, $columnas-desktop: 3);
+}
+
+.service-item {
+  background: $color-card-clara;
+  padding: $espacio-md;
+  border-radius: $radio-borde;
+}
+
+
+.contact-grid {
+  display: grid;
+  gap: $espacio-md;
+  grid-template-columns: 1fr;
+
+  @include desde($breakpoint-desktop) {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+.about-grid {
+  display: grid;
+  gap: $espacio-md;
+  grid-template-columns: 1fr;
+
+  @include desde($breakpoint-desktop) {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
