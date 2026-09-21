@@ -1,56 +1,47 @@
 @use "../utilities/variables" as *;
-@use "../utilities/mixins" as *;
 
 .footer {
-  padding: $espacio-md;
-  background: $color-footer-fondo;
-  color: $color-footer-texto;
+  padding: 20px;
+  background: $footer-bg;
+  color: white;
   text-align: center;
+}
 
-  .footer-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: $espacio-sm;
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 
-    @include desde($breakpoint-tablet) {
-      flex-direction: row;
-      justify-content: space-between;
-      text-align: left;
+  @media (min-width: $bp-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+
+    &:hover {
+      opacity: .7;
     }
   }
+}
 
-  .redes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: $espacio-md;
+.facebook {
+  color: $color-facebook;
+}
 
-    a {
-      text-decoration: none;
-      font-weight: bold;
-      transition: $transicion-rapida;
-
-      &:hover {
-        opacity: .7;
-      }
-    }
-
-    .facebook {
-      color: $color-facebook;
-    }
-
-    .instagram {
-      color: $color-instagram;
-    }
-
-    .twitter {
-      color: $color-twitter;
-    }
-
-    .linkedin {
-      color: $color-linkedin;
-    }
-  }
+.instagram {
+  color: $color-instagram;
 }

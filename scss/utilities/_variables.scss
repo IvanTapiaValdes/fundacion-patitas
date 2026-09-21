@@ -1,54 +1,29 @@
+$verde-fondo: #568d5b;
+$verde-header: #177741;
+$azul-principal: #1E3A8A;
+$azul-hover: #16307a;
+$naranja-hover: #F59E0B;
 
-$fuente-principal: 'Poppins', sans-serif;
-$fuente-tamano-base: 16px;
-
-
-$color-fondo: #568d5b;
 $color-texto: #0b0101;
-$color-navbar: #177741;
-$color-navbar-marca: rgb(4, 0, 0);
-$color-navbar-link: rgb(8, 0, 0);
-$color-navbar-hover: #f7f6fa;
-$color-azul-marca: #1E3A8A;
-$color-azul-marca-hover: #16307a;
-$color-acento: #F59E0B;
+$negro-navbar: rgb(4, 0, 0);
+$negro-navbar2: rgb(8, 0, 0); 
+$blanco-hover: #f7f6fa;
 
+$gris-claro: #F5F7FA;
+$fondo-section-card: #dae4e0;
+$fondo-home-card: #d7e3de;
 
-$color-card-section: #dae4e0;
-$color-card-home: #d7e3de;
-$color-card-clara: #F5F7FA;
-
-
-$color-footer-fondo: #111;
-$color-footer-texto: #ffffff;
-
-
+$footer-bg: #111;
 $color-facebook: #1877F2;
 $color-instagram: #E4405F;
-$color-twitter: #1DA1F2;
-$color-linkedin: #0A66C2;
 
-
-$radio-borde: 8px;
-$radio-borde-lg: 10px;
-
-
+$radio-borde: 10px;
+$radio-chico: 8px;
+$transicion-hover: .2s ease;
 $sombra-hover: 0 10px 20px rgba(30, 58, 138, .15);
 
+$bp-tablet: 768px;
+$bp-navbar: 991px;
+$bp-desktop: 1024px;
 
-$transicion-rapida: .3s;
-$transicion-hover: transform .2s ease, box-shadow .2s ease;
-
-
-$espacio-sm: 15px;
-$espacio-md: 20px;
-$espacio-lg: 25px;
-$espacio-xl: 40px;
-
-$ancho-maximo-contenido: 1000px;
-$ancho-maximo-carousel: 800px;
-
-
-$breakpoint-tablet: 768px;
-$breakpoint-desktop: 1024px;
-$breakpoint-navbar: 991px;
+$fuente-principal: 'Poppins', sans-serif;

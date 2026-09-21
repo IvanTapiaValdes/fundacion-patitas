@@ -1,25 +1,25 @@
 @use "../utilities/variables" as *;
 
 .btn-custom {
-  background: $color-azul-marca;
+  background: $azul-principal;
   color: white;
   border: none;
   font-weight: 600;
 
   &:hover {
-    background: $color-azul-marca-hover;
-    color: $color-acento;
+    background: $azul-hover;
+    color: $naranja-hover;
   }
 }
 
 .btn-outline-custom {
   background: transparent;
-  color: $color-azul-marca;
-  border: 2px solid $color-azul-marca;
+  color: $azul-principal;
+  border: 2px solid $azul-principal;
   font-weight: 600;
 
   &:hover {
-    background: $color-azul-marca;
+    background: $azul-principal;
     color: white;
   }
 }

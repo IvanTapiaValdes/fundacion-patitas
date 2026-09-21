@@ -1,15 +1,7 @@
 @use "variables" as *;
 
-@mixin desde($ancho) {
-  @media (min-width: $ancho) {
-    @content;
-  }
-}
-
-@mixin tarjeta-hover {
-  border: none;
-  border-radius: $radio-borde-lg;
-  transition: $transicion-hover;
+@mixin hover-lift {
+  transition: transform $transicion-hover, box-shadow $transicion-hover;
 
   &:hover {
     transform: translateY(-5px);
@@ -17,16 +9,8 @@
   }
 }
 
-@mixin grilla-responsive($columnas-tablet: 2, $columnas-desktop: 3) {
-  display: grid;
-  gap: $espacio-md;
-  grid-template-columns: 1fr;
-
-  @include desde($breakpoint-tablet) {
-    grid-template-columns: repeat($columnas-tablet, 1fr);
-  }
-
-  @include desde($breakpoint-desktop) {
-    grid-template-columns: repeat($columnas-desktop, 1fr);
+@mixin desde($ancho) {
+  @media (min-width: $ancho) {
+    @content;
   }
 }

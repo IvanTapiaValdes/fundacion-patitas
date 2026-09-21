@@ -1,20 +1,20 @@
 @use "../utilities/variables" as *;
 
 .carousel-caption-custom {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: $color-footer-texto;
-  border-radius: $radio-borde;
-  padding: 0.75rem 1rem;
+  background-color: rgba(0, 0, 0, .6);
+  color: #ffffff;
+  border-radius: $radio-chico;
+  padding: .75rem 1rem;
 
   h5,
   p {
-    color: $color-footer-texto;
-    margin-bottom: 0.25rem;
+    color: #ffffff;
+    margin-bottom: .25rem;
   }
 }
 
 .carousel-inner {
-  max-width: $ancho-maximo-carousel;
+  max-width: 800px;
   margin: 0 auto;
 }
 

@@ -1,16 +1,15 @@
-@use "utilities/variables";
-@use "utilities/mixins";
+@use "scss/utilities/variables" as *;
+@use "scss/utilities/mixins" as *;
 
-@use "base/base";
-@use "base/tipografia";
+@use "scss/base/base";
+@use "scss/base/tipografia";
 
+@use "scss/layout/header";
+@use "scss/layout/nav";
+@use "scss/layout/footer";
 
-@use "layout/header";
-@use "layout/nav";
-@use "layout/footer";
-
-@use "components/buttons";
-@use "components/cards";
-@use "components/carousel";
-@use "components/forms";
-@use "components/grids";
+@use "scss/components/buttons";
+@use "scss/components/cards";
+@use "scss/components/carousel";
+@use "scss/components/grids";
+@use "scss/components/forms";

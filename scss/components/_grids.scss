@@ -4,34 +4,42 @@
 .main-content {
   display: flex;
   flex-direction: column;
-  gap: $espacio-md;
+  gap: 20px;
 
   flex: 1;
 
-  padding: $espacio-md;
-  margin: $espacio-xl auto;
+  padding: 20px;
+  margin: 40px auto;
   width: 100%;
-  max-width: $ancho-maximo-contenido;
+  max-width: 1000px;
 }
 
-
 .service-grid {
-  @include grilla-responsive($columnas-tablet: 2, $columnas-desktop: 3);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+
+  @include desde($bp-tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include desde($bp-desktop) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .service-item {
-  background: $color-card-clara;
-  padding: $espacio-md;
-  border-radius: $radio-borde;
+  background: $gris-claro;
+  padding: 20px;
+  border-radius: $radio-chico;
 }
-
 
 .contact-grid {
   display: grid;
-  gap: $espacio-md;
+  gap: 20px;
   grid-template-columns: 1fr;
 
-  @include desde($breakpoint-desktop) {
+  @include desde($bp-desktop) {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
@@ -39,10 +47,10 @@
 
 .about-grid {
   display: grid;
-  gap: $espacio-md;
+  gap: 20px;
   grid-template-columns: 1fr;
 
-  @include desde($breakpoint-desktop) {
+  @include desde($bp-desktop) {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }

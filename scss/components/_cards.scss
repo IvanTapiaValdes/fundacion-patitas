@@ -4,42 +4,31 @@
 .section-card {
   display: flex;
   flex-direction: column;
-  gap: $espacio-md;
-  background: $color-card-section;
-  padding: $espacio-lg;
-  border-radius: $radio-borde-lg;
+  gap: 20px;
+  background: $fondo-section-card;
+  padding: 25px;
+  border-radius: $radio-borde;
 }
 
 .home-card {
-  @include tarjeta-hover;
-  background: $color-card-home;
+  border: none;
+  border-radius: $radio-borde;
+  background: $fondo-home-card;
+  @include hover-lift;
 
   .card-title {
-    color: $color-azul-marca;
+    color: $azul-principal;
   }
 }
 
 .project-card {
-  @include tarjeta-hover;
-  background: $color-card-clara;
+  border: none;
+  border-radius: $radio-borde;
+  background: $gris-claro;
+  @include hover-lift;
 
   .card-title {
-    color: $color-azul-marca;
-  }
-
-  .card-img-top {
-    height: 180px;
-    object-fit: cover;
-  }
-}
-
-
-.service-card {
-  @include tarjeta-hover;
-  background: $color-card-clara;
-
-  .card-title {
-    color: $color-azul-marca;
+    color: $azul-principal;
   }
 
   .card-img-top {
@@ -50,13 +39,29 @@
 
 .about-card {
   border: none;
-  border-radius: $radio-borde-lg;
-  background: $color-card-clara;
+  border-radius: $radio-borde;
+  background: $gris-claro;
+}
+
+.service-card {
+  border: none;
+  border-radius: $radio-borde;
+  background: $gris-claro;
+  @include hover-lift;
+
+  .card-title {
+    color: $azul-principal;
+  }
+
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
 }
 
 .modal-custom {
   .modal-header {
-    background: $color-azul-marca;
+    background: $azul-principal;
     color: white;
     border-bottom: none;
 
@@ -71,7 +76,7 @@
 }
 
 .badge-skill {
-  background: $color-azul-marca;
+  background: $azul-principal;
   color: white;
   font-weight: 600;
   font-size: .85rem;
