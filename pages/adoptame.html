@@ -16,7 +16,8 @@
 
     <link rel="stylesheet" href="../css/styles.css">
 
-    
+    <!-- AOS (animacion al hacer scroll) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,7 +39,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="adoptame.html">Adótame</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="adoptame.html">Adóptame</a></li>
                     <li class="nav-item"><a class="nav-link" href="como-adoptar.html">Cómo Adoptar</a></li>
                     <li class="nav-item"><a class="nav-link" href="colabora.html">Colabora</a></li>
                 </ul>
@@ -49,7 +50,7 @@
     <main class="main-content">
 
         <section class="section-card">
-            <div class="card intro-card mb-4">
+            <div class="card intro-card mb-4" data-aos="fade-up">
                 <div class="card-body">
                     <p class="mb-0">
                         Cada uno de estas mascotitas fue rescatada de situaciones de abandono, maltrato o calle, para recibir una segunda oportunidad. Conoce a nuestros perros y gatos
@@ -60,7 +61,7 @@
 
             <h1>Perritos en adopción</h1>
 
-            <div id="carruselPerros" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div id="carruselPerros" class="carousel slide mb-5" data-bs-ride="carousel" data-aos="fade-up">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carruselPerros" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Perro 1"></button>
                     <button type="button" data-bs-target="#carruselPerros" data-bs-slide-to="1" aria-label="Perro 2"></button>
@@ -70,7 +71,6 @@
                     <button type="button" data-bs-target="#carruselPerros" data-bs-slide-to="5" aria-label="Perro 6"></button>
                     <button type="button" data-bs-target="#carruselPerros" data-bs-slide-to="6" aria-label="Perro 7"></button>
                     <button type="button" data-bs-target="#carruselPerros" data-bs-slide-to="7" aria-label="Perro 8"></button>
-                    <button type="button" data-bs-target="#carruselPerros" data-bs-slide-to="8" aria-label="Perro 9"></button>
                 </div>
 
                 <div class="carousel-inner rounded">
@@ -155,7 +155,7 @@
 
             <h1>Gatitos en adopción</h1>
 
-            <div id="carruselGatos" class="carousel slide" data-bs-ride="carousel">
+            <div id="carruselGatos" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carruselGatos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Gato 1"></button>
                     <button type="button" data-bs-target="#carruselGatos" data-bs-slide-to="1" aria-label="Gato 2"></button>
@@ -240,6 +240,16 @@
 
 <!-- BOOTSTRAP -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <!-- AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // inicializa la libreria de animaciones, con numeros que probe y me gustaron
+    AOS.init({
+        duration: 700,
+        once: true
+    });
+</script>
 
 </body>
 </html>

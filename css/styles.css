@@ -1,3 +1,13 @@
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +54,7 @@ p {
   padding: 15px 0;
 }
 .navbar-custom .navbar-brand {
-  color: rgb(4, 0, 0);
+  color: #ffffff;
   font-weight: 700;
   font-size: 1.4rem;
   display: flex;
@@ -59,11 +69,12 @@ p {
 }
 
 .navbar-custom .nav-link {
-  color: rgb(8, 0, 0);
+  color: #ffffff;
   font-weight: 600;
 }
 .navbar-custom .nav-link:hover, .navbar-custom .nav-link.active {
-  color: #f7f6fa;
+  color: #ffffff;
+  text-decoration: underline;
 }
 .navbar-custom .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.5);
@@ -116,7 +127,7 @@ p {
 }
 
 .facebook {
-  color: #1877F2;
+  color: #5aa2ff;
 }
 
 .instagram {
@@ -145,6 +156,11 @@ p {
   color: white;
 }
 
+.service-card, .about-card, .project-card, .home-card {
+  border: none;
+  border-radius: 10px;
+}
+
 .section-card {
   display: flex;
   flex-direction: column;
@@ -152,11 +168,10 @@ p {
   background: #dae4e0;
   padding: 25px;
   border-radius: 10px;
+  animation: aparecer 0.6s ease-out 0s both;
 }
 
 .home-card {
-  border: none;
-  border-radius: 10px;
   background: #d7e3de;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -169,14 +184,12 @@ p {
 }
 
 .project-card {
-  border: none;
-  border-radius: 10px;
   background: #F5F7FA;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(30, 58, 138, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(30, 58, 138, 0.2);
 }
 .project-card .card-title {
   color: #1E3A8A;
@@ -187,14 +200,10 @@ p {
 }
 
 .about-card {
-  border: none;
-  border-radius: 10px;
   background: #F5F7FA;
 }
 
 .service-card {
-  border: none;
-  border-radius: 10px;
   background: #F5F7FA;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -260,10 +269,10 @@ p {
   flex-direction: column;
   gap: 20px;
   flex: 1;
-  padding: 20px;
-  margin: 40px auto;
+  padding: 15px;
+  margin: 25px auto;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1320px;
 }
 
 .service-grid {
@@ -320,4 +329,48 @@ p {
 .form-control:focus {
   border-color: #1E3A8A;
   box-shadow: 0 0 0 0.25rem rgba(30, 58, 138, 0.15);
+}
+
+/*# sourceMappingURL=styles.css.map */
+
+/* ---- ajustes para pantallas chicas (celular / modo inspeccionar) ---- */
+html,
+body {
+  overflow-x: hidden; /* evita el scroll hacia el lado si algo se sale */
+}
+
+figure,
+.card,
+.carousel {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: break-word; /* las palabras largas no rompen el ancho */
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    padding: 10px;
+    margin: 15px auto;
+  }
+
+  .section-card {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .navbar-custom .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .footer-inner {
+    text-align: center;
+  }
 }

@@ -1,11 +1,11 @@
 @use "variables" as *;
 
-@mixin hover-lift {
+@mixin hover-lift($distancia: -5px, $sombra: $sombra-hover) {
   transition: transform $transicion-hover, box-shadow $transicion-hover;
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: $sombra-hover;
+    transform: translateY($distancia);
+    box-shadow: $sombra;
   }
 }
 
@@ -13,4 +13,20 @@
   @media (min-width: $ancho) {
     @content;
   }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@mixin animacion-aparecer($duracion: .6s, $delay: 0s) {
+  animation: aparecer $duracion ease-out $delay both;
 }

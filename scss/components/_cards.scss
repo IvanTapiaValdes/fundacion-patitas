@@ -1,20 +1,26 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
-.section-card {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background: $fondo-section-card;
-  padding: 25px;
+%tarjeta-base {
+  border: none;
   border-radius: $radio-borde;
 }
 
-.home-card {
-  border: none;
+.section-card {
+  display: flex;
+  flex-direction: column;
+  gap: $espaciado-base * 2;
+  background: $fondo-section-card;
+  padding: $espaciado-base * 2.5;
   border-radius: $radio-borde;
+
+  @include animacion-aparecer();
+}
+
+.home-card {
+  @extend %tarjeta-base;
   background: $fondo-home-card;
-  @include hover-lift;
+  @include hover-lift();
 
   .card-title {
     color: $azul-principal;
@@ -22,10 +28,9 @@
 }
 
 .project-card {
-  border: none;
-  border-radius: $radio-borde;
+  @extend %tarjeta-base;
   background: $gris-claro;
-  @include hover-lift;
+  @include hover-lift(-8px, 0 12px 24px rgba(30, 58, 138, .2));
 
   .card-title {
     color: $azul-principal;
@@ -38,16 +43,14 @@
 }
 
 .about-card {
-  border: none;
-  border-radius: $radio-borde;
+  @extend %tarjeta-base;
   background: $gris-claro;
 }
 
 .service-card {
-  border: none;
-  border-radius: $radio-borde;
+  @extend %tarjeta-base;
   background: $gris-claro;
-  @include hover-lift;
+  @include hover-lift();
 
   .card-title {
     color: $azul-principal;

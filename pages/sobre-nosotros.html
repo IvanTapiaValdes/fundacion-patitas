@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- AOS (animacion al hacer scroll) -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,7 +38,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="sobre-nosotros.html">Sobre nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="sobre-nosotros.html">Sobre Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="adoptame.html">Adóptame</a></li>
                     <li class="nav-item"><a class="nav-link" href="como-adoptar.html">Cómo Adoptar</a></li>
                     <li class="nav-item"><a class="nav-link" href="colabora.html">Colabora</a></li>
@@ -51,7 +54,7 @@
 
             <div class="row g-4 align-items-stretch">
                 <!-- Cuadro izquierdo: imagen del perro -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6" data-aos="fade-right">
                     <div class="card h-100 about-card">
                         <div class="card-body p-0">
                             <figure class="mb-0">
@@ -63,23 +66,22 @@
                             </figure>
 
                             <figure class="mb-0 mt-3">
-                                <img src="../assets/puppy-1207816_1280.jpg"
+                                <img src="../assets/anforapepa.jpeg"
                                     class="rounded img-fluid w-100"
                                     style="object-fit: cover; max-height: 400px;"
                                     alt="Otro perro en adopción de Fundación Patitas">
-                                <figcaption class="text-center pt-2">Otro de nuestros amigos esperando un hogar.</figcaption>
+                                <figcaption class="text-center pt-2">Pepa - 12 de mayo de 2012 - 2 julio de 2020</figcaption>
                             </figure>
                         </div>
                     </div>
                 </div>
 
-                <!-- Cuadro derecho: texto -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6" data-aos="fade-left">
                     <div class="card h-100 about-card">
                         <div class="card-body d-flex flex-column justify-content-center">
                             <p>
                                 Nuestra familia desde hace más de 10 años ha realizado de forma particular la labor rescates y adopción de perritos y gatitos que viven en la calle. Durante este tiempo hemos alimentado y dado una segunda oportunidad a aquellos más vulnerables. Hemos rescatado y dado en adopción a muchas mascotas en situación de calle.
-                                Fundación  Patitas nace por la vida y muerte de nuestra mascota Pepa quien nos acompañó por más de 10 años. Lamentablemente Pepa comenzó a tener tumores y sufrir de cáncer durante su vida por lo cual fue tratada oncológicamente y extirpando los tumores, intentando y probando con todas las terapias y tratamientos disponibles. Pepa vivió por más de 10 años en nuestro hogar, pero en el año 2020 tristemente la enfermedad fue más fuerte y se convirtió en un Angel, una estrella que nos cuida desde el cielo. 
+                                Fundación  Patitas nace por la vida y muerte de nuestra mascota Pepa quien nos acompañó por más de 8 años. Lamentablemente Pepa comenzó a tener tumores y sufrir de cáncer durante su vida por lo cual fue tratada oncológicamente y extirpando los tumores, intentando y probando con todas las terapias y tratamientos disponibles. Pepa vivió por más de 10 años en nuestro hogar, pero en el año 2020 tristemente la enfermedad fue más fuerte y se convirtió en un Angel, una estrella que nos cuida desde el cielo. 
                                 Somos una Fundación de ayuda a los animales con 2 años de servicio como fundación en el sector de Bajos de Mena, Puente Alto. 
                                 Hemos logrado consagrar un proyecto basado en la preocupación y el cuidado de los animales que lo requieran, ya sea por el abandono o despreocupación de sus dueños, o porque simplemente han nacido en la calle.
                                 Apoyamos y difundimos casos de animales que lo necesitan y de otras fundaciones como “Vida de Gatos”. Hacemos difusión en las redes sociales frente a casos de maltrato, atropello, envenenamientos, abandono, enfermedades, esterilizaciones o castraciones a través de las redes sociales para llegar a las personas cercanas que puedan prestar ayuda.
@@ -111,6 +113,14 @@
 <!-- BOOTSTRAP -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+ <!-- AOS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 700,
+        once: true
+    });
+</script>
 
 </body>
 </html>
