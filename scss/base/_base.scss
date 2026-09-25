@@ -23,3 +23,44 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+figure,
+.card,
+.carousel {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    padding: 10px;
+    margin: 15px auto;
+  }
+
+  .section-card {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .navbar-custom .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .footer-inner {
+    text-align: center;
+  }
+}
