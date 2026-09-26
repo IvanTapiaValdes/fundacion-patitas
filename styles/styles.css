@@ -31,6 +31,42 @@ body {
   flex-direction: column;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+figure,
+.card,
+.carousel {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 767px) {
+  .main-content {
+    padding: 10px;
+    margin: 15px auto;
+  }
+  .section-card {
+    padding: 15px;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .navbar-custom .navbar-brand {
+    font-size: 1.1rem;
+  }
+  .footer-inner {
+    text-align: center;
+  }
+}
 h1 {
   font-size: clamp(2rem, 1.4rem + 2vw, 3rem);
   color: #1E3A8A;
@@ -54,7 +90,7 @@ p {
   padding: 15px 0;
 }
 .navbar-custom .navbar-brand {
-  color: #ffffff;
+  color: rgb(4, 0, 0);
   font-weight: 700;
   font-size: 1.4rem;
   display: flex;
@@ -69,12 +105,11 @@ p {
 }
 
 .navbar-custom .nav-link {
-  color: #ffffff;
+  color: rgb(8, 0, 0);
   font-weight: 600;
 }
 .navbar-custom .nav-link:hover, .navbar-custom .nav-link.active {
-  color: #ffffff;
-  text-decoration: underline;
+  color: #f7f6fa;
 }
 .navbar-custom .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.5);
@@ -127,7 +162,7 @@ p {
 }
 
 .facebook {
-  color: #5aa2ff;
+  color: #1877F2;
 }
 
 .instagram {
@@ -269,10 +304,10 @@ p {
   flex-direction: column;
   gap: 20px;
   flex: 1;
-  padding: 15px;
-  margin: 25px auto;
+  padding: 20px;
+  margin: 40px auto;
   width: 100%;
-  max-width: 1320px;
+  max-width: 1000px;
 }
 
 .service-grid {
@@ -329,48 +364,4 @@ p {
 .form-control:focus {
   border-color: #1E3A8A;
   box-shadow: 0 0 0 0.25rem rgba(30, 58, 138, 0.15);
-}
-
-/*# sourceMappingURL=styles.css.map */
-
-/* ---- ajustes para pantallas chicas (celular / modo inspeccionar) ---- */
-html,
-body {
-  overflow-x: hidden; /* evita el scroll hacia el lado si algo se sale */
-}
-
-figure,
-.card,
-.carousel {
-  max-width: 100%;
-}
-
-h1,
-h2,
-h3,
-p {
-  overflow-wrap: break-word; /* las palabras largas no rompen el ancho */
-}
-
-@media (max-width: 767px) {
-  .main-content {
-    padding: 10px;
-    margin: 15px auto;
-  }
-
-  .section-card {
-    padding: 15px;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  .navbar-custom .navbar-brand {
-    font-size: 1.1rem;
-  }
-
-  .footer-inner {
-    text-align: center;
-  }
 }
