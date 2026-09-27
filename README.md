@@ -1,67 +1,61 @@
-# Portafolio Web – Iván Tapia Valdés
+# Fundación Patitas
 
-Sitio web personal desarrollado con **HTML5**, **CSS3** y **Bootstrap 5**, como parte del curso de Desarrollo Web en Coderhouse.
+Proyecto final del curso de Desarrollo Web en Coderhouse. Es un sitio informativo para una fundación de rescate y adopción de animales: muestra quiénes son, los perros y gatos que están esperando hogar, cómo es el proceso para adoptar y las distintas formas de colaborar (donaciones, difusión, ser voluntario, etc).
 
-# Fundación Patitas 🐾
+Repo: https://github.com/IvanTapiaValdes/fundacion-patitas
+Deploy en Netlify: https://cozy-sunshine-f3f397.netlify.app/
 
-Sitio web informativo para una fundación de rescate y adopción de animales. Presenta a la organización, muestra perros y gatos disponibles para adopción, explica el proceso de adopción y ofrece formas de colaborar (donaciones, voluntariado, etc.).
+## Con qué está hecho
 
-Desarrollado con **HTML5**, **CSS3** y **Bootstrap 5**.
+- HTML5
+- SCSS, compilado a `styles/styles.css`. Usa variables, mixins, extend, nesting y partials separados por carpetas.
+- Bootstrap 5.3.8, cargado desde CDN (navbar, carrusel, cards, formularios)
+- AOS para las animaciones al hacer scroll
+- Google Fonts (Poppins)
 
-## 📁 Estructura del proyecto
+## Estructura
 
 ```
-Fundacion Patitas/
-├── index.html
-├── css/
-│   └── styles.css
-├── pages/
-│   ├── adoptame.html
-│   ├── colabora.html
-│   ├── como-adoptar.html
-│   └── sobre-nosotros.html
-├── assets/
-│   ├── logo.jpg
-│   └── ... (fotos de perros, gatos y otras imágenes del sitio)
-└── README.md
+index.html
+scss/
+  main.scss        
+  utilities/        
+  base/             
+  layout/           
+  components/       
+styles/
+  styles.css        
+pages/
+  adoptame.html
+  colabora.html
+  como-adoptar.html
+  sobre-nosotros.html
+assets/
+  logos, fotos de los animales, etc.
 ```
 
-## 🛠️ Tecnologías utilizadas
+## Si quieren editar los estilos
 
-* **HTML5** — estructura semántica de las páginas.
-* **CSS3** — estilos personalizados (`css/styles.css`), diseño responsivo con Grid y Flexbox.
-* **Bootstrap 5.3.3** (vía CDN) — navbar, carruseles, tarjetas, modales, formularios y badges.
-* **Google Fonts** (Poppins) — tipografía del sitio.
+Los estilos no se editan directo en styles.css, ese archivo se genera solo. Hay que modificar los .scss y después correr los siguientes comandos:
 
-## ✨ Características principales
+```
+npm install -g sass
+sass scss/main.scss styles/styles.css --style=expanded
+```
 
-* **Navbar responsiva** con menú colapsable en móviles.
-* **Carruseles de adopción** (perros y gatos) con imágenes en formato 800×600 (4:3), recortadas con `object-fit: cover` para verse consistentes sin deformarse, y leyendas con nombre y descripción de cada animal.
-* **Tarjetas** (`cards`) reutilizables para proyectos, servicios y secciones "Sobre mí"/contacto, con efecto hover.
-* **Grillas responsivas** (mobile-first) para las secciones de Servicios, Contacto y Sobre Mí: 1 columna en móvil, 2 en tablet (≥768px) y hasta 3 en escritorio (≥1024px).
-* **Formulario de contacto** estilizado con Bootstrap.
-* **Footer** con redes sociales y datos de contacto, adaptado a fila en pantallas ≥768px.
+## Qué tiene el sitio
 
-## 🚀 Cómo usarlo
+- Navbar de Bootstrap, responsive, con el menú hamburguesa andando bien en mobile
+- Cards con hover para mostrar servicios, proyectos y la sección de sobre nosotros
+- Dos carruseles (uno de perros, otro de gatos) con fotos en 800x600
+- Grillas que se acomodan solas según el tamaño de pantalla
+- Footer con redes sociales, que en pantallas grandes se pone en fila y en mobile se centra
 
-1. Descarga o clona el proyecto.
-2. Abre `index.html` directamente en tu navegador, o sírvelo con un servidor local (por ejemplo, la extensión "Live Server" de VS Code) para evitar problemas de rutas relativas.
-3. No requiere instalación de dependencias: Bootstrap y las fuentes se cargan desde CDN.
+## Para verlo funcionar
 
-## 🖼️ Imágenes
+Se puede abrir index.html directo con doble clic, o mejor con Live Server de VS Code para que las rutas relativas anden bien. No hace falta instalar nada más, Bootstrap y las fuentes vienen del CDN.
 
-Todas las fotos de los animales en adopción se encuentran en `assets/`. Para mantener la consistencia visual del carrusel, se recomienda que las imágenes tengan una relación de aspecto 4:3 (por ejemplo, 800×600 px).
+## Autor
 
-
-
-## 🌐 Sitio desplegado
-
-https://github.com/IvanTapiaValdes/fundacion-patitas
-
-## 👤 Autor
-
-**Iván Tapia**
-© 2026 Fundación Patitas. Todos los derechos reservados.
-
-
-
+Iván Tapia Valdés
+Fundación Patitas
