@@ -34,6 +34,7 @@ pages/
   sobre-nosotros.html
 assets/
   logos, fotos de las mascotas, etc.
+README
 ```
 
 * Si quieren editar los estilos:
