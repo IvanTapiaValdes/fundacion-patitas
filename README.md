@@ -1,6 +1,6 @@
 * Fundación Patitas
 
-Proyecto final del curso de Desarrollo Web en Coderhouse. Fundación Patitas es un sitio informativo para una fundación de rescate y adopción de animales: muestra quiénes son, los perros y gatos que están esperando hogar y los que ya lo han encontrado, se indica cómo es el proceso para adoptar y las distintas formas de colaborar (difusión,ser voluntario, donaciones etc).
+Proyecto final del curso de Desarrollo Web en Coderhouse. Fundación Patitas es un sitio informativo para una fundación de rescate y adopción de animales: muestra quiénes son, los perros y gatos que están esperando hogar y los que ya lo han encontrado, se indica cómo es el proceso de adopción y las distintas formas de colaborar (difusión,ser voluntario, donaciones etc).
 
 * Repositorio: https://github.com/IvanTapiaValdes/fundacion-patitas
 * Deploy en Netlify: https://cozy-sunshine-f3f397.netlify.app/
